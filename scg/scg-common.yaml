@@ -388,5 +388,5 @@ resilience4j:
   # TimeLimiterConfig 없으면, spring.cloud.gateway.routes.metadata.response-timeout 적용됨
   # metadata.response-timeout 없으면, spring.cloud.gateway.http-client.response-timeout 적용됨  
   timeout: 
-    default: 2500
+    default: 1000
     custom: 1000        
