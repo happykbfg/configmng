@@ -381,12 +381,12 @@ resilience4j:
       minimumNumberOfCalls: 5
       failureRateThreshold: 60
       waitDurationInOpenState: 10000
-      slowCallDurationThreshold: 2000  # slowCall* 조건에 해당되도 fallback 호출 안됨 
+      slowCallDurationThreshold: 1000  # slowCall* 조건에 해당되도 fallback 호출 안됨 
       slowCallRateThreshold: 50
   
   #== http timeout 정책
   # TimeLimiterConfig 없으면, spring.cloud.gateway.routes.metadata.response-timeout 적용됨
-  # metadata.response-timeout 없으면, spring.cloud.gateway.http-client.response-timeout 적용됨 
+  # metadata.response-timeout 없으면, spring.cloud.gateway.http-client.response-timeout 적용됨  
   timeout: 
     default: 2500
     custom: 2000        
