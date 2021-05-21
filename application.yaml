@@ -5,7 +5,7 @@ eureka:
     register-with-eureka: true 
     fetch-registry: true 
     service-url:
-      defaultZone: ${eureka_servers}
+      defaultZone: http://eureka-0.eureka:8761/eureka/
  
 ribbon:
   eureka:
